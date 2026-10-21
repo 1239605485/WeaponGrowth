@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "gacha_enabled": true,
+  "growth_mode": "world",
+  "suppress_ahead_weapons": true,
+  "legacy_directory": "",
+  "multiplayer_enabled": true
+}

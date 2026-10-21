@@ -1,0 +1,94 @@
+{
+  "pkgId": "liuxin.weapon_growth.kernel",
+  "name": "全武器成长 Native",
+  "author": "liuxin",
+  "version": "2.1.0",
+  "versionCode": 20100,
+  "description": "纯 Native KernelLoader 模组。按世界进度和职业经验调整武器成长，支持世界/击杀/混合模式及越级压制。聊天输入 /查看状态、/随机单抽、/指定近战单抽、/随机职业十连、/指定召唤职业十连、/抽奖记录。指定职业可替换为近战、远程、魔法、召唤。合作联机由各客户端处理本地玩家成长与账本，发奖后同步背包；不提供专用服务端统一券库或反作弊。已移除抽奖 UI。Android arm64 的 2.0.3 前版经用户确认可运行；本版新增联机与桌面平台尚需实机验证。",
+  "dependence": [],
+  "support": {
+    "android": {
+      "arm64": true
+    },
+    "windows": {
+      "x86": true,
+      "x64": true
+    },
+    "linux": {
+      "x86": true,
+      "x64": true
+    }
+  },
+  "brieflyDescribe": "武器成长、职业经验与中文指令抽奖，支持合作联机。",
+  "targetGameVersion": "1.4.5.8",
+  "minGameVersion": "1.4.5.8",
+  "maxGameVersion": "1.4.5.8",
+  "features": [
+    "MECHANICS_CHANGE",
+    "PROGRESSION_SYSTEM",
+    "MULTIPLAYER_ENHANCED"
+  ],
+  "sizeCategory": "LARGE",
+  "stableVerified": false,
+  "experimental": true,
+  "deprecated": false,
+  "hasExtendedContent": true,
+  "settings": [
+    {
+      "key": "enabled",
+      "title": "启用武器成长",
+      "description": "暂停加成与经验获取，保留存档。",
+      "type": "SWITCH",
+      "defaultValue": true
+    },
+    {
+      "key": "gacha_enabled",
+      "title": "启用抽奖",
+      "description": "独立控制抽奖与赠券。",
+      "type": "SWITCH",
+      "defaultValue": true
+    },
+    {
+      "key": "multiplayer_enabled",
+      "title": "启用合作联机",
+      "description": "本地客户端成长与抽奖，不在专用服务端重复计算。",
+      "type": "SWITCH",
+      "defaultValue": true
+    },
+    {
+      "key": "suppress_ahead_weapons",
+      "title": "启用越级压制",
+      "description": "按当前世界阶段限制超前武器。",
+      "type": "SWITCH",
+      "defaultValue": true
+    },
+    {
+      "key": "growth_mode",
+      "title": "成长模式",
+      "description": "世界进度、职业击杀经验或两者混合。",
+      "type": "CHOICE",
+      "defaultValue": "world",
+      "options": [
+        {
+          "value": "world",
+          "label": "世界成长"
+        },
+        {
+          "value": "kill",
+          "label": "击杀经验"
+        },
+        {
+          "value": "mixed",
+          "label": "混合成长"
+        }
+      ]
+    },
+    {
+      "key": "legacy_directory",
+      "title": "旧存档目录",
+      "description": "可选绝对路径，留空仅查当前私有目录。",
+      "type": "STRING",
+      "defaultValue": ""
+    }
+  ]
+}

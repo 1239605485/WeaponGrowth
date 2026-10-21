@@ -1,0 +1,10 @@
+{
+  "type": "Mod",
+  "parentLoader": "eternal.future.kernelloader",
+  "file": "kernelmod.json",
+  "resources": "Resources",
+  "iconFile": "icon.png",
+  "icon": {"type": "Default"},
+  "plugins": {"type": "NULL"},
+  "tefkernel": {"minVersion": "1.0.0"}
+}

@@ -1,0 +1,10 @@
+build*/
+.tools/
+.superpowers/
+dist/
+__pycache__/
+build-*.exe
+build-*.pdb
+build-*.obj
+
+*.log
